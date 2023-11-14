@@ -16,27 +16,35 @@
                 <httpHeaders>
                     <property>
                         <name>Authorization</name>
-                        <!--<value>Basic dfasdfasdfasdfadsfadsfasdfasdfads=</value>-->
+                        <value>{{authorization}}</value>
                     </property>
                 </httpHeaders>
             </configuration>
         </server>
+
+        <!--<server>
+            <id>maven-public</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>-->
     </servers>
 
     <mirrors>
         <mirror>
             <id>nexus</id>
             <mirrorOf>*</mirrorOf>
-            <url>https://nexus-inter.wakaka.com.cn/repository/maven-public/</url>
+            <url>{{nexusUrl}}</url>
         </mirror>
-        <mirror>
-    <id>nexus-aliyun</id>
-    <mirrorOf>central</mirrorOf>
-    <name>Nexus aliyun</name>
-    <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-</mirror>
-
     </mirrors>
+
+    <!--<mirrors>
+        <mirror>
+            <id>maven-public</id>
+            <mirrorOf>*</mirrorOf>
+            <url>http://www.env.com:9081/repository/maven-public/</url>
+        </mirror>
+    </mirrors>-->
+
      <profiles>
         <profile>
             <id>nexus</id>

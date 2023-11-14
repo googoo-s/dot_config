@@ -5,3 +5,6 @@ git:
 bash:
   ohMyBashPath: /c/Users/sherry/.oh-my-bash
   sszhCmd: ssh -N -D 7070 23@qq.com.cn
+maven:
+  authorization: Basic bGl1c2Tg4
+  nexusUrl: https://aa.com.cn/repository/maven-public/
