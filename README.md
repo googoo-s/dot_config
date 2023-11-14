@@ -14,6 +14,13 @@
 
 * 复制 `settings.yaml.demo` 到 `settings.yaml` 修改相应的配置
 * 修改`settings.yaml`的配置
+* 安装依赖
+  ```
+  make ensure
+  # 没有make 
+  pipenv sync --dev
+  env clean
+  ```
 * 使用
   ```
   ### 安装 
