@@ -1,0 +1,7 @@
+home: C:\Users\sherry
+git:
+  name: 23
+  email: 23@qq.com
+bash:
+  ohMyBashPath: /c/Users/sherry/.oh-my-bash
+  sszhCmd: ssh -N -D 7070 23@qq.com.cn

@@ -1,0 +1,88 @@
+[user]
+	email = {{email}}
+	name = {{name}}
+
+[alias]
+    aa = add .
+    cm = commit -m
+    ca = commit --amend
+    cs = commit -S
+    csa = commit -S --all
+    csn = commit -S --amend --no-edit --all --no-verify
+    cme =commit -S --amend --edit --allow-empty
+    ag = reset HEAD^  # again
+    br = branch
+    cb = checkout -b
+    bd = branch -D
+    co = checkout
+    crp = cherry-pick
+    d = diff
+    dfl = diff --name-status  # diff and list name
+    dfs = diff --staged
+    dl = diff HEAD^
+    f = fetch o --tags
+    g = grep -in  # ignore case, line number
+    hide = update-index --assume-unchanged  # same with `git unchanged`
+    last = log -1 HEAD
+    ld = stash pop
+    load = stash pop
+    logg = log --graph --decorate --oneline --abbrev-commit --all  # VERY VERY useful command
+    logo = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --no-merges
+    logs = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    mgf = merge --ff-only
+    p = push
+    pa = push --all
+    pd = push o HEAD -f
+    pf = push -f
+    pl = pull --rebase
+    po = push o 
+    ps = push
+    pua = push -u o HEAD:alpha-only -f
+    pull = pull --rebase
+    puo = push -u o
+    puz = push -u z
+    rb = rebase
+    rbc = rebase --continue
+    rbi = rebase -i  # if there's only one git command you should learn, it'll be `git rebase`
+    rd = rebase o/HEAD
+    rdi = rebase o/HEAD -i
+    regret = reset HEAD^  # regret last commit, same with `git ag`
+    rg = reset HEAD^  # regret
+    rh = reset --hard
+    rhd = reset --hard o/HEAD
+    rp = remote prune
+    rpo = remote prune o
+    rroo = remote rename origin o
+    rs = reset
+    save = stash
+    slog = log --graph --decorate --oneline --all --simplify-by-decoration
+    sm = submodule
+    squash = rebase HEAD~2 -i
+    st = status
+    sv = stash
+    unchanged = update-index --assume-unchanged  # assume a file is unchanged, often use to change some local config
+    unhide = update-index --no-assume-unchanged  # same with `git changed`
+    wj = commit -S --all --message 'JIRA-123: WIP' --allow-empty --no-verify  # commit with Jira: Work In Progress quickly
+    wp = commit -S --all --message 'feat: WIP' --allow-empty --no-verify  # commit with Work In Progress quickly
+    yes = log --oneline --since yesterday --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --no-merges  # see what's new since yesterday
+    changed = update-index --no-assume-unchanged  # revert op of `git unchanged`
+[core]
+	# autocrlf = true
+    editor = vim 
+    # eol = lf  # use unix style line endings
+    excludesfile = ~/.gitignore  # global gitignore file
+    filemode = false  # filemode is strange under windows
+    ignorecase = false  # don't ignore case
+    pager = less --raw-control-chars -x2
+[color]
+    ui = true
+[init]
+    defaultBranch = master
+[merge]
+    tool = vimdiff
+[push]
+    default = simple
+[credential "helperselector"]
+    selected = manager-core
+[advice]
+    skppedCherryPicks = false

@@ -1,0 +1,119 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+" :actionlist 可以查看所有的action
+" :action {action} 可以执行action
+" :source ~/.ideavimrc 可以刷新ideavimrc
+" action 打卡 ideavim: treak action ids
+
+let mapleader=" "
+inoremap jj <ESC>
+
+" no backup
+set noundofile
+set nobackup
+set noswapfile
+
+
+""" Common settings
+set showmode
+set scrolloff=30
+" Do incremental searching.
+set nu
+set relativenumber
+
+set showmatch
+set hlsearch
+set incsearch
+
+set ignorecase
+set smartcase
+set history=3000000
+
+set keep-english-in-normal
+set keep-english-in-normal-and-restore-in-insert
+""" Idea specific settings
+" Join next line of text with current line with shift + j.
+set ideajoin
+set clipboard=unnamedplus,unnamed
+" set ideastrictmode
+" Stay in the mode in which the editing started
+set idearefactormode=keep
+""" Emulated Plugins
+" Activate emulated plugin. https://github.com/JetBrains/ideavim/wikr/Emulated-plugins
+set easymotion
+set NERDTree
+set commentary
+set surround
+set ReplaceWithRegister
+
+""" Mappings
+nnoremap <leader>rr :source ~/.ideavimrc <cr>
+nnoremap <leader>rc :e ~/.ideavimrc <cr>
+" Inspired by https://goudham.me/my-second-brain/my-ideavim-config.html
+
+"  nnoremap <leader>ht :action TypeHierarchy<CR>
+" nnoremap <leader>hm :action MethodHierarchy<CR>
+
+
+nnoremap <leader>fu :action FindUsages<CR>
+nnoremap <leader>vu :action ShowUsages<CR>
+nnoremap <leader>vs :action FileStructurePopup<CR>
+nnoremap <leader>vo :action OverrideMethods<CR>
+nnoremap <leader>vp :action ParameterInfo<CR>
+nnoremap <leader>vd :action QuickJavaDoc<CR>
+nnoremap <leader><leader> :action ShowIntentionActions<CR>
+
+
+
+
+" goto
+nnoremap gg :action GotoDeclaration<Cr>
+nnoremap gf :action GotoImplementation<CR>
+nnoremap gt :action GotoTest<CR>
+nnoremap gs :action GotoSuperMethod<CR>
+nnoremap ge :action GotoNextError<CR>
+nnoremap gc :action VcsShowNextChangeMarker<CR>
+nnoremap go :action Back<CR>
+nnoremap gi :action Forward<CR>
+
+
+
+" Zen mode
+nnoremap <leader>zz :action HideAllWindows<CR>
+
+
+"  all Ctrl_Key
+map <C-J> <ESC>:action MethodDown<CR>
+map <C-K> <ESC>:action MethodUp<CR>
+map <C-Q> <ESC>:action CloseContent<CR>
+map <C-S-Q> <ESC>:action CloseAllEditors<CR>
+map <C-G> <Plug>(easymotion-s)
+map <C-O> <ESC>:action Back<CR>
+map <C-I> <ESC>:action Forward<CR>
+map <C-W> <ESC>:action EditorSelectWord<CR>
+map <C-S-W> <ESC>:action EditorUnSelectWord<CR>
+
+""" Shortcuts handler for conflicts between JetBrains and Vim
+sethandler <C-A> a:ide
+sethandler <C-C> a:ide
+sethandler <C-V> a:ide
+sethandler <C-X> a:ide
+sethandler <C-D> a:ide
+sethandler <C-E> a:ide
+sethandler <C-F> a:ide
+sethandler <C-S-F> a:ide
+sethandler <C-R> a:ide
+sethandler <C-S-R> a:ide
+sethandler <C-W> a:ide
+sethandler <C-/> a:ide
+sethandler <C-S> a:ide
+sethandler <C-T> a:vim
+sethandler <C-N> a:ide
+sethandler <C-S-N> a:ide
+sethandler <C-S-A> a:ide
+sethandler <S-S> a:ide
+sethandler <TAB> a:ide
+sethandler <S-TAB> a:ide
+
