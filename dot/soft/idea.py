@@ -1,3 +1,5 @@
+import logging
+
 from dot.const import CONFIG_PATH, HOME
 from dot.soft import BaseSoft
 from dot.utils import make_link, rm_link
@@ -14,6 +16,7 @@ class IDEA(BaseSoft):
         pass
 
     def install(self):
+        logging.warning("ideavimrc install")
         make_link(IDEA_CONFIG_PATH.joinpath(".ideavimrc").absolute(), IDEA_VIM_PATH.absolute(), True)
 
     def clean_link(self):

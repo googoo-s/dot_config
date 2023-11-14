@@ -5,7 +5,8 @@ from dot.soft.idea import IDEA
 from dot.soft.maven import Maven
 from dot.soft.package import Package
 from dot.soft.wezterm import Wezterm
+from dot.soft.windows_terminal import WindowsTerminal
 
 
 def get_soft_list() -> list[BaseSoft]:
-    return [Git(), Package(), Bash(), Maven(), Wezterm(), IDEA()]
+    return [Git(), Package(), Bash(), Maven(), Wezterm(), IDEA(), WindowsTerminal()]

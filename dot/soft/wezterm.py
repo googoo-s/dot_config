@@ -1,3 +1,5 @@
+import logging
+
 from dot.const import CONFIG_PATH, HOME
 from dot.soft import BaseSoft
 from dot.utils import make_link, rm_link
@@ -14,6 +16,7 @@ class Wezterm(BaseSoft):
         pass
 
     def install(self):
+        logging.warning("wezterm install")
         make_link(WEZTERM_CONFIG_PATH.absolute(), WEZTERM_PATH.absolute(), True)
 
     def clean_link(self):
