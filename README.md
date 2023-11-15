@@ -26,13 +26,17 @@
   ### 安装 
   make install 
   # 没有make 
-  python main.py install
+  python main.py install -a
   
   
   ### 卸载
   make uninstall 
   # 没有make 
-  python main.py uninstall
+  python main.py uninstall -a
+  
+  ### 如果只需要安装部分配置
+  python main.py install -s git
+  python main.py uninstall -s git
   ```
 * 最后需要手动source .bashrc
 
