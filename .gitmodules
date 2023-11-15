@@ -1,0 +1,3 @@
+[submodule "config/.emacs.d"]
+	path = config/.emacs.d
+	url = git@github.com:googoo-s/.emacs.d.git
