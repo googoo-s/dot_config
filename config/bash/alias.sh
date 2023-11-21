@@ -8,7 +8,11 @@ alias gti='git'
 alias gui='gitui'
 alias gu='gitui'
 
+alias f='fzf'
 alias vi='nvim'
+alias vif='nvim $(fzf)'
+alias nvimf='nvim $(fzf)'
+
 alias fl='lf'
 alias ranger='lf'
 
@@ -17,9 +21,7 @@ alias e='explorer'
 alias m='mvn'
 alias gg='~/.g/bin/g.exe'
 
-alias f='fzf'
-alias vif='nvim $(fzf)'
-alias nvimf='nvim $(fzf)'
+
 
 
 
