@@ -10,6 +10,7 @@ alias gu='gitui'
 
 alias f='fzf'
 alias vi='nvim'
+alias vide='neovide'
 alias vif='nvim $(fzf)'
 alias nvimf='nvim $(fzf)'
 
@@ -21,14 +22,11 @@ alias e='explorer'
 alias m='mvn'
 alias gg='~/.g/bin/g.exe'
 
-
-
-
-
 alias cc='cd /c'
 alias dl='cd ~/Downloads'
 alias dd='cd ~/Documents'
 alias dw='cd ~/workspace'
+alias dn='cd ~/AppData/Local/nvim'
 alias df='cd ~/dot_config'
 alias blog='cd ~/workspace/makabaka'
 
