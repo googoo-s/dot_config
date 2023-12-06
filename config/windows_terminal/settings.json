@@ -4,8 +4,7 @@
     "actions": 
     [
         {
-            "command": "closePane",
-            "keys": "alt+backspace"
+            "command": "closeWindow"
         },
         {
             "command": 
@@ -16,14 +15,8 @@
             "keys": "ctrl+alt+right"
         },
         {
-            "command": "closeWindow"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab"
-            },
-            "keys": "ctrl+enter"
+            "command": "closePane",
+            "keys": "alt+backspace"
         },
         {
             "command": 
@@ -32,6 +25,13 @@
                 "split": "down"
             },
             "keys": "alt+minus"
+        },
+        {
+            "command": 
+            {
+                "action": "newTab"
+            },
+            "keys": "ctrl+enter"
         },
         {
             "command": "unbound",
@@ -202,10 +202,6 @@
             "keys": "ctrl+comma"
         },
         {
-            "command": "openNewTabDropdown",
-            "keys": "ctrl+alt+enter"
-        },
-        {
             "command": 
             {
                 "action": "splitPane",
@@ -222,6 +218,10 @@
             "keys": "alt+enter"
         },
         {
+            "command": "openNewTabDropdown",
+            "keys": "ctrl+alt+enter"
+        },
+        {
             "command": 
             {
                 "action": "resizePane",
@@ -236,18 +236,18 @@
         {
             "command": 
             {
-                "action": "openSettings",
-                "target": "settingsUI"
-            },
-            "keys": "ctrl+`"
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "previous"
             },
             "keys": "alt+z"
+        },
+        {
+            "command": 
+            {
+                "action": "openSettings",
+                "target": "settingsUI"
+            },
+            "keys": "ctrl+`"
         },
         {
             "command": "openTabRenamer",
@@ -303,12 +303,13 @@
         "defaults": 
         {
             "antialiasingMode": "cleartype",
-            "colorScheme": "One Half Dark",
+            "colorScheme": "Tango Dark",
             "cursorShape": "filledBox",
             "elevate": false,
             "font": 
             {
-                "face": "FiraCode Nerd Font Mono Retina"
+                "face": "SauceCodePro Nerd Font Mono",
+                "size": 14.0
             },
             "opacity": 100,
             "padding": "0",
