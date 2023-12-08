@@ -15,8 +15,7 @@
             "keys": "ctrl+alt+right"
         },
         {
-            "command": "closePane",
-            "keys": "alt+backspace"
+            "command": "closePane"
         },
         {
             "command": 
@@ -202,6 +201,66 @@
             "keys": "ctrl+comma"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+shift+c"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+y"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+v"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+backspace"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+pgup"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+pgdn"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+z"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+space"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+end"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+home"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+a"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+numpad0"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+plus"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+minus"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+m"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -230,16 +289,14 @@
             "keys": "ctrl+alt+up"
         },
         {
-            "command": "duplicateTab",
-            "keys": "ctrl+shift+y"
+            "command": "duplicateTab"
         },
         {
             "command": 
             {
                 "action": "moveFocus",
                 "direction": "previous"
-            },
-            "keys": "alt+z"
+            }
         },
         {
             "command": 
@@ -279,16 +336,24 @@
         {
             "command": "toggleFocusMode",
             "keys": "f10"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
         }
     ],
     "alwaysOnTop": false,
     "alwaysShowNotificationIcon": true,
     "autoHideWindow": false,
+    "centerOnLaunch": true,
+    "confirmCloseAllTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{d6cbe04b-e4d1-40de-beef-4757e2e80d61}",
     "experimental.rendering.forceFullRepaint": true,
     "experimental.rendering.software": true,
+    "focusFollowMouse": true,
+    "initialRows": 40,
     "language": "zh-Hans",
     "launchMode": "default",
     "newTabMenu": 
@@ -601,7 +666,8 @@
         }
     ],
     "showTabsInTitlebar": true,
-    "startOnUserLogin": true,
+    "snapToGridOnResize": false,
+    "startOnUserLogin": false,
     "theme": "dark",
     "themes": 
     [
@@ -648,6 +714,6 @@
             }
         }
     ],
-    "useAcrylicInTabRow": false,
+    "useAcrylicInTabRow": true,
     "windowingBehavior": "useAnyExisting"
 }
