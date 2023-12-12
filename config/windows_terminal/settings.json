@@ -368,7 +368,7 @@
         "defaults": 
         {
             "antialiasingMode": "cleartype",
-            "colorScheme": "Tango Dark",
+            "colorScheme": "One Half Dark",
             "cursorShape": "filledBox",
             "elevate": false,
             "font": 
@@ -406,6 +406,14 @@
                 "icon": "C:\\msys64\\ucrt64.ico",
                 "name": "msys2",
                 "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "commandline": "C:\\Windows\\system32\\wsl.exe -d Ubuntu",
+                "guid": "{a6d9be1e-55e5-428d-9cba-02a11465937c}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+                "name": "Ubuntu",
+                "startingDirectory": "~"
             }
         ]
     },
